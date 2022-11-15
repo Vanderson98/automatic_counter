@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS FontAwesone -->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <!-- CSS Normal -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="tema">
+    <section id="mudarTema">
+      <button id="claro" onclick="mudarTemaClaro()">
+        <i class="fa-sharp fa-solid fa-lightbulb"></i>
+      </button>
+
+      <button id="escuro" onclick="mudarTemaEscuro()">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </section>
+
+    <section id="principal">
+      <div id="texto">
+        <h2>Contador automático</h2>
+      </div>
+
+      <div id="numeroCont">
+        <h2 id="numeroContadorHoras">0</h2>
+
+        <h2 id="espaco2">:</h2>
+
+        <h2 id="numeroContadorMin">0</h2>
+
+        <h2 id="espaco">:</h2>
+
+        <h2 id="numeroContador">00</h2>
+      </div>
+
+      <div id="botoesContador">
+        <button id="comecarBotao" onclick="botaoContadorComecar()">
+          Começar
+        </button>
+
+        <button id="pausarBotao" onclick="botaoContadorPausar()">Pausar</button>
+
+        <button id="reniciarBotao" onclick="botaoContadorReniciar()">
+          Reniciar
+        </button>
+      </div>
+
+      <div id="erro">
+        <h2>
+          <span>[ERRO]</span>Clique somente uma vez no botão!<span>[ERRO]</span>
+        </h2>
+      </div>
+    </section>
+
+    <footer>
+      <div id="copy">
+        <h4>Developed by: © Vanderson<span id="ano"></span></h4>
+      </div>
+    </footer>
+
+    <!-- JS FontAwesone -->
+    <script
+      src="https://kit.fontawesome.com/c8eb2ed6f5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS Normal-->
+    <script src="js/index.js"></script>
+  </body>
+</html>
